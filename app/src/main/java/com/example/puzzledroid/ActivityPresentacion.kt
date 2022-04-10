@@ -1,14 +1,11 @@
 package com.example.puzzledroid
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class splashScreen : AppCompatActivity() {
+class ActivityPresentacion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val intent = Intent(this, ActivityPresentacion::class.java)
-        startActivity(intent)
-        finish()
+        setContentView(R.layout.activity_presentacion)
     }
 }
